@@ -1,0 +1,16 @@
+{
+  "name": "angular2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "angular2": "^2.0.0-alpha.44",
+    "finalhandler": "^0.4.0",
+    "serve-static": "^1.10.0"
+  }
+}
