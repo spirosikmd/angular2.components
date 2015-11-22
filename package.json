@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "angular2": "^2.0.0-alpha.44",
     "finalhandler": "^0.4.0",
     "serve-static": "^1.10.0"
   }
