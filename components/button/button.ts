@@ -1,4 +1,4 @@
-import {Component, View, bootstrap} from 'angular2/angular2';
+import {Component, View} from 'angular2/angular2';
 
 @Component({
     selector: 'ui-button'
@@ -7,9 +7,11 @@ import {Component, View, bootstrap} from 'angular2/angular2';
     template: '<button (click)="click($event)">{{ text }}</button>'
 })
 class ButtonComponent {
-    text: string = 'Click me!';
-    click($event: Event) {
+    text:string = 'Click me!';
+
+    click($event:Event) {
         console.log($event);
     };
 }
-bootstrap(ButtonComponent);
+
+export {ButtonComponent};

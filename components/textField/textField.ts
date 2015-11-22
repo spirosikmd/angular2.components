@@ -1,4 +1,4 @@
-import {Component, View, bootstrap} from 'angular2/angular2';
+import {Component, View} from 'angular2/angular2';
 
 @Component({
     selector: 'ui-text-field'
@@ -6,7 +6,8 @@ import {Component, View, bootstrap} from 'angular2/angular2';
 @View({
     template: '<input type="text" value="{{ name }}" />'
 })
-class ButtonComponent {
-    name: string = 'Value!';
+class TextFieldComponent {
+    name:string = 'Value!';
 }
-bootstrap(ButtonComponent);
+
+export {TextFieldComponent};
