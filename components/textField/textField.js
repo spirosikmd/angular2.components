@@ -9,20 +9,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 import { Component, View, bootstrap } from 'angular2/angular2';
 let ButtonComponent = class {
     constructor() {
-        this.text = 'Click me!';
+        this.name = 'Value!';
     }
-    click($event) {
-        console.log($event);
-    }
-    ;
 };
 ButtonComponent = __decorate([
     Component({
-        selector: 'ui-button'
+        selector: 'ui-text-field'
     }),
     View({
-        template: '<button (click)="click($event)">{{ text }}</button>'
+        template: '<input type="text" value="{{ name }}" />'
     })
 ], ButtonComponent);
 bootstrap(ButtonComponent);
-//# sourceMappingURL=button.js.map
+//# sourceMappingURL=textField.js.map

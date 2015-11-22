@@ -4,12 +4,12 @@ import {Component, View, bootstrap} from 'angular2/angular2';
     selector: 'ui-button'
 })
 @View({
-    template: '<button (click)="click()">{{ text }}</button>'
+    template: '<button (click)="click($event)">{{ text }}</button>'
 })
 class ButtonComponent {
     text: string = 'Click me!';
-    click() {
-        console.log('clicked');
+    click($event: Event) {
+        console.log($event);
     };
 }
 bootstrap(ButtonComponent);
